@@ -186,9 +186,9 @@ function App() {
   // Update document title with location
   useEffect(() => {
     if (weather) {
-      document.title = `MausamMate | ${weather.location.name}`;
+      document.title = `MausamNama | ${weather.location.name}`;
     } else {
-      document.title = 'MausamMate';
+      document.title = 'MausamNama';
     }
   }, [weather]);
 
@@ -204,7 +204,7 @@ function App() {
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-8">
             <div className="flex items-center">
               <CloudRain size={32} className="text-white mr-2" />
-              <h1 className="text-3xl font-bold text-white">MausamMate</h1>
+              <h1 className="text-3xl font-bold text-white">MausamNama</h1>
             </div>
             <SearchBar
               onLocationSelect={handleLocationSelect}
@@ -259,7 +259,7 @@ function App() {
           ) : null}
           
           <footer className="mt-auto pt-8 pb-4 text-center text-white/60 text-sm">
-            <p>© 2025 MausamMate - Weather data provided by OpenWeatherMap</p>
+            <p>© 2025 MausamNama - Weather data provided by OpenWeatherMap</p>
           </footer>
         </div>
       </div>
